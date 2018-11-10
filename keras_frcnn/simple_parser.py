@@ -46,6 +46,8 @@ def get_data(input_path):
 					all_imgs[filename]['imageset'] = 'trainval'
 				else:
 					all_imgs[filename]['imageset'] = 'test'
+				
+				print('yes')
 
 			all_imgs[filename]['bboxes'].append({'class': class_name, 'x1': int(x1), 'x2': int(x2), 'y1': int(y1), 'y2': int(y2)})
 
