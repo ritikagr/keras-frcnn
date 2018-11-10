@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-%matplotlib inline
 
 def get_data(input_path):
 	found_bg = False
