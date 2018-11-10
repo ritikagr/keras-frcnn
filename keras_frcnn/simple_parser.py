@@ -1,5 +1,7 @@
 import cv2
 import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
 
 def get_data(input_path):
 	found_bg = False
@@ -34,6 +36,7 @@ def get_data(input_path):
 				all_imgs[filename] = {}
 				print(filename)
 				img = cv2.imread(filename)
+				plt.imshow(img)
 				(rows,cols) = img.shape[:2]
 				all_imgs[filename]['filepath'] = filename
 				all_imgs[filename]['width'] = cols
